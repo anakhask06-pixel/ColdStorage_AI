@@ -1,0 +1,58 @@
+
+/* Main application wrapper */
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+  padding: 24px;
+  text-align: left;
+}
+
+/* Page subtitles */
+.subtitle {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Reusable page content width */
+.page-container {
+  width: 100%;
+  max-width: var(--content-width);
+  margin-inline: auto;
+}
+
+/* Reusable card styling */
+.card {
+  min-width: 0;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Reusable section spacing */
+.section {
+  margin-bottom: 24px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .app {
+    padding: 16px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 12px;
+  }
+}

@@ -13,3 +13,35 @@ venv/
 
 # VS Code settings
 .vscode/
+
+# Local environment configuration
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+venv/
+.venv/
+backend/venv/
+backend/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Frontend dependencies and generated builds
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Local logs and database files
+*.log
+*.sqlite3
+*.db
+
+# IDE and Windows files
+.vscode/
+.idea/
+desktop.ini
+Thumbs.db
